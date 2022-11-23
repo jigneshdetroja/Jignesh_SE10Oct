@@ -11,8 +11,12 @@ void evenOdd(int n1)
 		printf("\nIt is Odd");
 	}
 }
+
+
 void main()
 {
-	int a=52;
+	int a;
+	printf("\nEnter A : ");
+	scanf("%d",&a);
 	evenOdd(a);
 }

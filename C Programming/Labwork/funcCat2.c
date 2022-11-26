@@ -16,8 +16,6 @@ void evenOdd(int n1)
 void main()
 {
 	int a,b,choice;
-	printf("\nEnter A & B : ");
-	scanf("%d%d",&a,&b);
 	printf("\nA = %d, B = %d",a,b);
 	printf("\n\nPress 1. Adddition\nPress 2. Substraction\nPress 3. Multiplication\nPress 4. Division");
 	printf("\n\nEnter your choice ?");

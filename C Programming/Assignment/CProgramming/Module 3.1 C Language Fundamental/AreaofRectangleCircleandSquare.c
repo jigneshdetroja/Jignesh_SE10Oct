@@ -14,5 +14,4 @@ void main()
 	
 	printf("Area of Rectangle is %2f\n",area);
 	
-	getch();
 }

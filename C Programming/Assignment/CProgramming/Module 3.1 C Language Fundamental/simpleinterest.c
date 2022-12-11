@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+void main()
 {
 	float PAmount, ROI, Time_Period, si;
 	
@@ -16,5 +16,4 @@ int main()
 	si = (PAmount * ROI * Time_Period) / 100;
 	printf("\nSimple Interest for Principal Amount %.2f is = %.2f", PAmount,si);
 	
-	return 0;
 }

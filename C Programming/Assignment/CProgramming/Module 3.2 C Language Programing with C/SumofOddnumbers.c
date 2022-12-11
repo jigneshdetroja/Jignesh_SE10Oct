@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+void main()
 {
 	int i, number,sum = 0;
 	printf("\n Please Enter the Maximum Limit Value : ");

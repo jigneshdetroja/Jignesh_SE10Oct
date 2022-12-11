@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+void main()
 {
 	int n, sum=0, firstdigit, lastdigit;
 	printf("Enter Number = ");

@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+void main()
 {
 	int days, years, weeks;
 	
@@ -15,5 +15,4 @@ int main()
 	printf("Weeks : %d\n", weeks);
 	printf("Days  : %d\n", days);
 	
-	return 0;
 }

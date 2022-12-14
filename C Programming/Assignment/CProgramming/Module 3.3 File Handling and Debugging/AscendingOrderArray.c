@@ -1,38 +1,48 @@
 #include <stdio.h>
-#define Max_Size 50
+
 void main()
 {
-   int i, count, arr[Max_Size];
- 
-   printf("Enter the number of elements you want to sort:");
-   scanf("%d", &count);
-   printf("\nEnter the numbers:");
+   int a[5], i,k,temp,choice;
+   printf("\nEnter elements : ");
    
-   for (i = 0; i < count; ++i)
+   for (i = 0; i < 5; i++)
    {
-      scanf("%d", &arr[i]);
+      scanf("%d", &a[i]);
    }
- 
-   array_sort_ascending_order(arr, count);
-}
-void array_sort_ascending_order(int arr[], int count)
-{
-   int temp, i, j, k;
-   for (j = 0; j < count; ++j)
-   {
-      for (k = j + 1; k < count; ++k)
-      {
-         if (arr[j] > arr[k])
+ for(i=0; i<5; i++)
+ 	 {
+ 	for (k=i; k<5; k++)
+ 	if (a[k]>a[k])
          {
-            temp = arr[j];
-            arr[j] = arr[k];
-            arr[k] = temp;
+            temp = a[i];
+            a[i] = a[k];
+            a[k] = temp;
          }
-      }
-   }
-   printf("Array in ascending order now:\n");
-   for (i = 0; i < count; ++i)
-   {
-      printf("%d\n", arr[i]);
-   }
+	 }
+
+printf("\nAcending Order : ");
+for(i=0; i<5; i++)
+
+{
+  printf("%d ",a[i]);
 }
+    for(i=0; i<5; i++)
+	{
+		for(k=i+1; k<5; k++)
+		{
+			if(a[i]<a[k])
+			{
+				temp=a[i];
+				a[i]=a[k];
+				a[k]=temp;	
+			}
+		}
+	}
+printf("\nDescending Order : ");
+for(i=0; i<5; i++)
+{
+	printf("%d ",a[i]);
+}
+
+}
+

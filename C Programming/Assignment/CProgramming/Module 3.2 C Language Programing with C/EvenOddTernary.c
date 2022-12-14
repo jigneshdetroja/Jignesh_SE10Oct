@@ -4,7 +4,7 @@ void main()
 {
 	int n;
 	
-	printf("Enter int number\n");
+	printf("Enter int number ");
 	scanf("%d", &n);
 	
 	(n%2==0)?

@@ -1,16 +1,14 @@
 #include<stdio.h>
 void main()
 {
-	int a,b;
-	printf("Enter Two Numbers: ");
-	scanf("%d%d",&a,&b);
-   {
-	
-	if(a>b)
-	
-	else
-	{
-		printf("Maximum Number : %d",b);
-	}
-   }
+	float a,b,c,max;
+	printf("Enter 3 Numbers separated by spaces : ");
+	scanf("%f%f%f",&a,&b,&c);
+	max = a;
+	if (b>max)
+		max = b;
+	if (c>max)
+		max = c;
+		
+	printf("Maximum Number : %f",max);
 }

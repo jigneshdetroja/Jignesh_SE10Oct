@@ -1,10 +1,13 @@
 h1{
-	background-color: yellowgreen;	
-	font-family: Calibri;
-	text-align: center;
+
+text-align: center; background-color: red; width: 100% color: red; 
+
 }
 
 
+
+
 div{
-	background-color: chocolate;
+
+	background-color: skyblue; text-align: center; border: 1px solid black; width: 100% 
 }

@@ -1,0 +1,2 @@
+SELECT salary AS 'Highest to Lowest' FROM employee ORDER BY salary DESC;
+SELECT salary AS 'Lowest to Highest' FROM employee ORDER BY salary ASC;

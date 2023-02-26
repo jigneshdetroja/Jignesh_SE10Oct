@@ -1,0 +1,10 @@
+INSERT INTO officers(officer_name,address) VALUES ('jay','ahmedabad'),
+('jignesh','surat'),
+('prashant','rajkot'),
+('deepak','mumbai'),
+('shivam','baroda');
+
+
+CREATE TABLE students(student_id int PRIMARY KEY AUTO_INCREMENT not null,
+student_name varchar(20) NOT null,
+student_address varchar(20) NOT null);

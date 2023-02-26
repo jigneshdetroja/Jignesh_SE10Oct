@@ -1,0 +1,79 @@
+CREATE TABLE Employee_J(
+    Employee_id int PRIMARY KEY AUTO_INCREMENT not null,
+    First_name varchar (25) not null,
+    Last_name varchar (20) not null,
+    Salary bigint not null,
+    Joining_date datetime not null,
+    Department varchar (20) not null
+);
+
+
+
+INSERT INTO employee_j (Employee_id,First_name,Last_name,Salary,Joining_date,Department) VALUES ("1","John","Abraham","1000000","2013-01-01 12.00.00","Banking"),
+("2","Michael","Clarke","800000","2013-01-01 12.00.00","Insaurance"),
+("3","Roy","Thomas","700000","2013-02-01 12.00.00","Banking"),
+("4","Tom","Jose","600000","2013-02-01 12.00.00","Insaurance"),
+("5","Jerry","Pinto","650000","2013-02-01 12.00.00","Insaurance"),
+("6","Philip","Mathew","750000","2013-01-01 12.00.00","Services"),
+("7","TestName1","123","650000","2013-01-01 12.00.00","Services"),
+("8","TestName2","Lname%","600000","2013-02-01 12.00.00","Insaurance");
+
+CREATE TABLE Incentive(Employee_ref_id int NOT null,
+                       Incentive_date date NOT null,
+                       Incentive_amount int NOT null);
+
+
+
+INSERT INTO incentive(Employee_ref_id,Incentive_date,Incentive_amount)
+VALUES("1","2013-02-01","5000"),
+("2","2013-02-01","3000"),
+("3","2013-02-01","4000"),
+("1","2013-01-01","4500"),
+("2","2013-01-01","3500");
+
+
+A) Get First_name from employee table using Employee_name
+  SELECT First_name AS Employee_name FROM employee_j;
+
+B) Get First_name, Joining_date and Salary FROM employee_j table
+  SELECT First_name,Joining_date,Salary FROM employee_j; 
+
+C) Get all employee details from the employee table order by First_Name Ascending and Salary descending?
+  SELECT First_name,Salary FROM employee_j ORDER BY First_name ASC,Salary DESC;
+
+D) Get employee details from employee table whose first name contains ‘J’.
+  SELECT * from employee_j WHERE First_name like 'J%';
+
+E) Get department wise maximum salary from employee table order by salary ascending?
+  SELECT Salary,Department FROM employee_j ORDER BY Salary ASC;
+
+F) Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+  SELECT employee_j.First_name,incentive.Incentive_amount FROM employee_j INNER JOIN incentive ON employee_j.Employee_id=incentive.Employee_ref_id WHERE Incentive_amount>3000;
+
+
+CREATE TABLE employeeupdate (E_id int not null,
+                             F_name varchar(20) NOT null,
+                             L_name varchar(20) NOT null,
+                             Sal float NOT null,
+                             Join_date datetime NOT null,
+                             Depart varchar(20) not null);
+
+G)Create After Insert trigger on Employee table which insert records in view
+table 
+
+>> CREATE TRIGGER AFTER_employees_update 
+   AFTER UPDATE ON employee_j FOR EACH ROW
+   INSERT INTO employeeupdate SET ACTION='update',
+   E_id=Emp_id,
+   F_name=Fir_name,
+   L_name=Las_name,
+   Sal=Sala,
+   Joi_date=Join_date,
+   Depart=Departme,
+   CHANGEdat = Now();
+
+UPDATE employee_j SET Last_name 'Detroja' WHERE Employee_id='1';
+
+SELECT * FROM employeeupdate;
+
+	

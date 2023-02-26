@@ -1,0 +1,7 @@
+CREATE TABLE student(RollNo int PRIMARY KEY AUTO_INCREMENT not null,
+Name varchar(20) NOT null,
+Branch varchar(20) NOT null);
+
+INSERT INTO student(RollNo,Name,Branch) VALUES('1','Jay','Computer Science'),
+('2','Suhani','Electronic and Com'),
+('3','Kriti','Electronic and Com');

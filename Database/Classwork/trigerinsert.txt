@@ -1,0 +1,7 @@
+INSERT INTO employees(fname,lname,email,salary) VALUES("jignesh","detroja","jignesh@gmail.com",38000),
+("deepak","varma","deepak@gmail.com",35000),
+("prashant","shukla","prashant@gmail.com",19000),
+("shivam","dubey","shivam@gmail.com",25000),
+("ankita","shah","ankita@gmail.com",20000),
+("avadh","gajera","avadh@gmail.com",17000);
+

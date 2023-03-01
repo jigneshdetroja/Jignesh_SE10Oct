@@ -1,0 +1,28 @@
+l1 = [23,7,23,2,7]
+
+l2 = []
+for i in l1:
+    if i not in l2:
+       l2.append(i)
+print(l2)
+
+Types of Collection :
+
+There are 4 types of collection in python
+1) list
+2) tuple
+3) set
+4) dictionary
+
+list: list is a collection data type which is contain similar and dis-similar data elements at single location, list is mutable(changable), list is orderable, list is indexable.
+
+
+
+set : set is a collection of data type which is contain only unique values, set is unorderable, set is unindexable, set is immutable
+
+syntax:
+
+set = {}
+
+
+

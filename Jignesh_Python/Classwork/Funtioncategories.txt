@@ -1,0 +1,10 @@
+Function categories
+
+ there are 4 types of categories
+1) function without parameters and function without return types
+
+2) function with parameters and function without return types
+
+3) function without parameters and function with return type
+
+4) function with parameters and function with return type

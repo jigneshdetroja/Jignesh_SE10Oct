@@ -1,0 +1,18 @@
+
+OOPS: object oriented programming system
+
+class : class is a collection data type which contain data member and meber function
+        in a single entity
+
+    syntax: 
+problem
+
+def addstudent:
+    pass
+    
+def addfaculty:
+    pass
+    
+def viewstudent:
+    pass
+    

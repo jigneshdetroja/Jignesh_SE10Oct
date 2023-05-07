@@ -1,0 +1,15 @@
+Function Categories:
+There are 4 types of funtions
+1) Function without parameter and function without return type
+
+	syntax: def <funname>()
+		    //block of code
+		
+		<funname>() #function calling
+2) Function with parameter and function without return type
+
+	syntax: def add(n1,n2)
+		//operation
+		
+		def mul(n1,n2)
+		//operation	
